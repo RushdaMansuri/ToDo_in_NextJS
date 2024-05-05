@@ -1,37 +1,51 @@
-/* Header styling */
+/* Header.module.css */
+
+/* Header container */
 .header {
-    margin: 0px;
-    background-color: #A4BE5C;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    padding: 0 20px;
-    color: white; /* Set the text color to white */
-  }
-  
-  /* Todo App styling */
-  .todoApp {
-    margin: 0;
-  }
-  
-  /* Navigation links styling */
-  .navList {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-  }
-  
-  .navList li {
-    margin-right: 20px;
-  }
-  
-  .navList li a {
-    text-decoration: none;
-    color: white; /* Set the text color to white */
-  }
-  
-  .navList li a:hover {
-    color: darkgreen;
-  }
-  
+  margin: 0;
+  background-color: #A4BE5C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 20px;
+  color: white; /* Set the text color to white */
+}
+
+/* Logo container (icon + text) */
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Todo App icon */
+.todoIcon {
+  width: 140px; /* Adjust the size as needed */
+  height: 75px;
+  margin-right: 10px;
+}
+
+/* Todo App text */
+.todoApp {
+  margin: 0;
+}
+
+/* Navigation links styling */
+.navList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.navList li {
+  margin-right: 20px;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: white; /* Set the text color to white */
+}
+
+.navList li a:hover {
+  color: darkgreen;
+}
