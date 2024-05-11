@@ -35,7 +35,8 @@ const TodoList: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Todo List</h1>
+      <h1>ToDo List:</h1>
+      
       <AddTodoForm onAdd={addTodo} />
       <ul>
         {todos.map(todo => (

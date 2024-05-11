@@ -1,6 +1,7 @@
 .form {
     display: flex;
     margin-bottom: 20px;
+    margin-top: 20px;
   }
   
   .input {
@@ -8,7 +9,6 @@
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px 0 0 4px;
-    margin-top: 10px;
   }
   
   .button {

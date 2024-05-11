@@ -29,6 +29,7 @@ const AddTodoForm: React.FC<AddTodoFormProps> = ({ onAdd }) => {
         onChange={handleInputChange}
         className={styles.input}
       />
+      <br/>
       <button type="submit" className={styles.button}>Add Todo</button>
     </form>
   );
