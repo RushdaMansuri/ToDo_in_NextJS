@@ -1,21 +1,24 @@
 .form {
-    display: flex;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  
-  .input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-  }
-  
-  .button {
-    padding: 10px 16px;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    background-color: #A4BE5C;
-    color: white;
-    cursor: pointer;
-  }
+  display: flex;
+  justify-content: space-between; /* Makes sure input and button are spaced */
+  align-items: center; /* Vertically centers input and button */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px; /* Adds space between input and button */
+}
+
+.button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #A4BE5C;
+  color: white;
+  cursor: pointer;
+}

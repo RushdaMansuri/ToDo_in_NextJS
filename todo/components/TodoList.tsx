@@ -1,4 +1,3 @@
-// TodoList.tsx
 import React, { useState } from 'react';
 import AddTodoForm from './AddTodoForm';
 import EditTodoForm from './EditTodoForm';
@@ -24,15 +23,15 @@ const TodoList: React.FC = () => {
   };
 
   const toggleTodo = (id: number) => {
-    setTodos(prevTodos =>
-      prevTodos.map(todo =>
+    setTodos((prevTodos) =>
+      prevTodos.map((todo) =>
         todo.id === id ? { ...todo, completed: !todo.completed } : todo
       )
     );
   };
 
   const deleteTodo = (id: number) => {
-    setTodos(prevTodos => prevTodos.filter(todo => todo.id !== id));
+    setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
   };
 
   const editTodo = (id: number) => {
@@ -40,8 +39,8 @@ const TodoList: React.FC = () => {
   };
 
   const saveEditedTodo = (id: number, newText: string) => {
-    setTodos(prevTodos =>
-      prevTodos.map(todo =>
+    setTodos((prevTodos) =>
+      prevTodos.map((todo) =>
         todo.id === id ? { ...todo, text: newText } : todo
       )
     );
@@ -55,11 +54,11 @@ const TodoList: React.FC = () => {
   return (
     <div className={styles.container}>
       <h1>ToDo List:</h1>
-      
+
       <AddTodoForm onAdd={addTodo} />
-      <ul>
-        {todos.map(todo => (
-          <li key={todo.id} className={styles.item}>
+      <ul className={styles.ul}>
+        {todos.map((todo) => (
+          <li key={todo.id} className={styles.li}>
             <input
               type="checkbox"
               checked={todo.completed}
@@ -80,7 +79,10 @@ const TodoList: React.FC = () => {
                 {todo.text}
               </span>
             )}
-            <button onClick={() => deleteTodo(todo.id)} className={styles.deleteButton}>
+            <button
+              onClick={() => deleteTodo(todo.id)}
+              className={styles.deleteButton}
+            >
               Delete
             </button>
           </li>
