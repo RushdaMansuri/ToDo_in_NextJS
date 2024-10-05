@@ -1,7 +1,7 @@
 .form {
   display: flex;
-  justify-content: space-between; /* Makes sure input and button are spaced */
-  align-items: center; /* Vertically centers input and button */
+  justify-content: space-between; 
+  align-items: center; 
   margin-bottom: 20px;
   margin-top: 20px;
 }
