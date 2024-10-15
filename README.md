@@ -1,4 +1,4 @@
-# Todo App with Next.js
+# Todo App with NextJS
 
 This is a simple ToDo application built using Next.js. It allows users to create, update, and delete tasks.
 
